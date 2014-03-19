@@ -24,11 +24,11 @@ KeyboardInputManager.prototype.listen = function () {
   var self = this;
 
   function dojump(event) {
-    event.preventDefault();
     var modifiers = event.altKey || event.ctrlKey || event.metaKey ||
                     event.shiftKey;
 
-    if (!modifiers) {
+    if (!modifiers && event.target.tagName != "A") {
+      event.preventDefault();
       self.emit("jump");
     }
   }
