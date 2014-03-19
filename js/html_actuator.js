@@ -2,6 +2,7 @@ function HTMLActuator() {
   this.gridContainer    = document.querySelector(".grid-container");
   // this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
+  this.dogeSays = document.querySelector(".doge-says");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
   this.birdobj          = document.querySelector(".tile-bird");
@@ -15,6 +16,9 @@ function HTMLActuator() {
   this.blockinnc        = document.querySelector(".tile-block-c .tile-inner");
   this.blockinnd        = document.querySelector(".tile-block-d .tile-inner");
 }
+
+dogeSayings = ['such good', 'so amaze', 'many points', 'very unstoppable', 'great jorb', 'such playing', 'very good', 'points', 'very gaming', 'such player', 'concern' ,'bewildered',
+ 'many game', 'so good', 'very scores', 'so scoring', 'so hot right now', 'such playing', 'such matching', 'so matched', 'very matched', 'very neat' ,'such natural',]
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
@@ -35,6 +39,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
   else                            classes.push("tile-2");
 
   this.applyClasses(this.birdobj, classes);
+  this.clearContainer(this.dogeSays);
 
   var zonesize = this.gridContainer.clientHeight;
   var morepos = 0.75 * (metadata.score - Math.floor(metadata.score));
@@ -141,6 +146,15 @@ HTMLActuator.prototype.updateScore = function (score) {
     addition.textContent = "+" + difference;
 
     this.scoreContainer.appendChild(addition);
+    var message = dogeSayings[Math.floor(Math.random() * dogeSayings.length)]
+    var messageElement = document.createElement("p");
+    messageElement.textContent = message
+    var left = 'left:' + Math.round(Math.random() * 80) + '%;'
+    var top = 'top:' + Math.round(Math.random() * 80) + '%;'
+    var color = 'color: rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ');'
+    var styleString = left + top + color
+    messageElement.setAttribute('style', styleString);
+    this.dogeSays.appendChild(messageElement);
   }
 };
 

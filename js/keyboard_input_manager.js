@@ -24,6 +24,7 @@ KeyboardInputManager.prototype.listen = function () {
   var self = this;
 
   function dojump(event) {
+    event.preventDefault();
     var modifiers = event.altKey || event.ctrlKey || event.metaKey ||
                     event.shiftKey;
 
