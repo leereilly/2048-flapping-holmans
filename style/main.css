@@ -5,8 +5,8 @@ html, body {
   background: #fff;
   color: #000;
 /*  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;*/
-  font-family: 'Comic Sans', 'Comic Sans', Chalkboard, Helvetica, Arial, sans-serif;
-  font-size: 18px; 
+  font-family: 'AvenirNextLTW01-Regular', Helvetica, sans-serif;
+  font-size: 18px;
   -webkit-animation: background-gradient-change linear 6s infinite alternate;
   -moz-animation: background-gradient-change linear 6s infinite alternate;
   -moz-animation: background-gradient-change linear 6s infinite alternate; }
@@ -26,18 +26,18 @@ h1.title {
   margin: 0;
   display: block;
   float: left; }
-  
+
   #twitter-widget-0 {
-    width: 100px !important;    
+    width: 100px !important;
     position: relative;
   }
-  
+
   .footer > div{
     display:inline-block !important;
     width: auto !important;
     overflow:hidden;
   }
-  
+
   .footer{
     width:188px;
     margin-left: auto;
@@ -70,11 +70,11 @@ h1.title {
   100% {
     top: -50px;
     opacity: 0; } }
-    
+
   @-webkit-keyframes fade-in-out {
     0% {
       opacity: 0; }
-      
+
     50% {
       opacity: 1; }
 
@@ -84,7 +84,7 @@ h1.title {
   @-moz-keyframes fade-in-out {
     0% {
       opacity: 0; }
-      
+
     50% {
       opacity: 1; }
 
@@ -94,13 +94,13 @@ h1.title {
   @keyframes fade-in-out {
     0% {
       opacity: 0; }
-      
+
     50% {
       opacity: 1; }
 
     100% {
       opacity: 0; } }
-      
+
   @-webkit-keyframes hover-change {
       0%   {color: cyan;}
       25%  {color: magenta;}
@@ -112,13 +112,13 @@ h1.title {
       25%  {color: magenta;}
       50%  {color: yellow;}
       100% {color: white;} }
-      
+
   @keyframes hover-change {
       0%   {color: cyan;}
       25%  {color: magenta;}
       50%  {color: yellow;}
       100% {color: white;} }
-      
+
   @-webkit-keyframes background-gradient-change {
       0%   {background: #cff;}
       33%  {background: #fcf;}
@@ -130,23 +130,23 @@ h1.title {
       33%  {background: #fdf;}
       66%  {background: #ffd;}
       100%   {background: #dff;}}
-      
+
   @keyframes background-gradient-change {
       0%   {background: #dff;}
       33%  {background: #fdf;}
       66%  {background: #ffd;}
-      100%   {background: #dff;}}      
-      
+      100%   {background: #dff;}}
+
   a:hover {
          -webkit-animation: hover-change linear 0.1s infinite;
          -moz-animation: hover-change linear 0.1s infinite;
          animation: hover-change linear 0.1s infinite;
-       }      
+       }
 
 .scores-container {
   float: right;
   text-align: right; }
-  
+
 .game-container .doge-says {
   position: fixed;
   top: 0;
@@ -164,7 +164,7 @@ h1.title {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
-    
+
 
   .info-container {
     position: relative;
@@ -173,7 +173,7 @@ h1.title {
     margin-left:-25px;
     top:30px;
     margin-bottom:50px;}
-    
+
   .info-container, .hide-info {
     display: inline-block;
     background: #f0f;
@@ -189,7 +189,7 @@ h1.title {
       .info-container a, .hide-info a{
         color:#fff;
         text-decoration:none;}
-    
+
   .game-container .info {
     display: none;
     position: absolute;
@@ -365,7 +365,7 @@ hr {
 
 .grid-container {
   position: absolute;
-  z-index: 1; 
+  z-index: 1;
   overflow: hidden;
   }
 
@@ -397,7 +397,7 @@ hr {
 .tile, .tile .tile-inner {
   width: 107px;
   height: 107px;
-  -webkit-transform: translate3d(0, 0, 0);  
+  -webkit-transform: translate3d(0, 0, 0);
   line-height: 116.25px; }
 .tile.tile-position-1-1 {
   -webkit-transform: translate(0px, 0px);
@@ -484,28 +484,28 @@ hr {
     background: #f0f url('../img/212/doge-wink-212.gif');
     background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-    
+
   .tile.tile-4 .tile-inner {
     background: #f0f url('../img/212/doge-shake-space-212.gif');
-    background-size: cover;    
+    background-size: cover;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-    
+
   .tile.tile-8 .tile-inner {
     background: #f0f url('../img/212/doge-peepers-212.gif');
     background-size: cover;}
-    
+
   .tile.tile-16 .tile-inner {
     background: #f0f url('../img/212/doge-prizza-212.gif');
     background-size: cover;}
-    
+
   .tile.tile-32 .tile-inner {
     background: #f0f url('../img/212/doge-hat-212.gif');
     background-size: cover;}
-    
+
   .tile.tile-64 .tile-inner {
     background: #f0f url('../img/212/doge-gradient-212.gif');
     background-size: cover;}
-    
+
   .tile.tile-128 .tile-inner {
     background: #f0f url('../img/212/doge-fat-212.gif');
     background-size: cover;
@@ -552,7 +552,7 @@ hr {
   .tile.tile-super .tile-inner {
 
     background: #f0f url('../img/212/doge-derp-212.gif');
-    background-size: cover;    
+    background-size: cover;
     font-size: 30px; }
     @media screen and (max-width: 480px) {
       .tile.tile-super .tile-inner {
@@ -853,28 +853,28 @@ hr {
       background: #f0f url('../img/114/doge-wink-114.gif');
       background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-    
+
     .tile.tile-4 .tile-inner {
       background: #f0f url('../img/114/doge-shake-space-114.gif');
-      background-size: cover;    
+      background-size: cover;
       box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-    
+
     .tile.tile-8 .tile-inner {
       background: #f0f url('../img/114/doge-peepers-114.gif');
       background-size: cover;}
-    
+
     .tile.tile-16 .tile-inner {
       background: #f0f url('../img/114/doge-prizza-114.gif');
       background-size: cover;}
-    
+
     .tile.tile-32 .tile-inner {
       background: #f0f url('../img/114/doge-hat-114.gif');
       background-size: cover;}
-    
+
     .tile.tile-64 .tile-inner {
       background: #f0f url('../img/114/doge-gradient-114.gif');
       background-size: cover;}
-    
+
     .tile.tile-128 .tile-inner {
       background: #f0f url('../img/114/doge-fat-114.gif');
       background-size: cover;
@@ -921,7 +921,7 @@ hr {
     .tile.tile-super .tile-inner {
 
       background: #f0f url('../img/114/doge-derp-114.gif');
-      background-size: cover;    
+      background-size: cover;
       font-size: 30px; }
       @media screen and (max-width: 480px) {
         .tile.tile-super .tile-inner {
@@ -957,4 +957,3 @@ hr {
     margin-top: 90px !important; }
   .game-message .lower {
     margin-top: 30px !important; } }
-    
